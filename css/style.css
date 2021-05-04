@@ -1,0 +1,92 @@
+/* body styling */
+body {
+  padding:0px;
+  margin:0px;
+  background-color: rgb(247, 252, 255);
+}
+/* header styling */
+header {
+  background:rgb(247, 252, 255);
+  padding: 12px 0px 12px 0px;
+  margin:0px;
+  font-size: 4em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* navigation bar styling */
+#navbar {
+  overflow:hidden;
+  background-color:black
+}
+#navbar a {
+  float:left;
+  display: block;
+  color: rgb(247, 242, 255);
+  font-weight: bold;
+  text-align:center;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  text-decoration: none;
+}
+#navbar a:hover{
+  background:black;
+  color: orange;
+}
+
+#me {
+  display: block;
+  margin: 10px auto;
+
+}
+
+.entry {
+  margin: 24px auto 24px auto;
+  /* border: solid 5px black; */
+  padding: 6px;
+
+}
+
+h2 {
+  font-size:1.75em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+
+p {
+  font-size: 1.25em;
+}
+
+ul {
+  font-size: 1.15em;
+}
+
+
+/* footer styling */
+
+.botnav {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  bottom: 0;
+  width: 100%;
+}
+.botnav a {
+  float: left;
+  display: block;
+  color: rgb(247, 242, 255);
+  text-align:center;
+  padding: 14px 16px;
+  text-decoration:none;
+  font-size:17px;
+  text-transform: uppercase; 
+}
+.botnav a:hover{
+  color:orange;
+}
