@@ -19,13 +19,16 @@ if (lowerCaseGuest === 'yes'||lowerCaseGuest === 'y'){
 let guestQ1 = prompt (guestName + ", do you think Barra is a fan of Lord of The Rings?")
 let lowerCaseGuestQ1 = guestQ1.toLowerCase();
 
-if (lowerCaseGuestQ1 === 'yes'||lowerCaseGuestQ1 === 'y'){
-  alert (guestName + " chose " +guestQ1);
-  score++;
-} else if (lowerCaseGuestQ1 === 'no'||lowerCaseGuestQ1 === 'n'){
-  alert (guestName + " chose " +guestQ1);
+function question1(){
+  if (lowerCaseGuestQ1 === 'yes'||lowerCaseGuestQ1 === 'y'){
+    alert (guestName + " chose " +guestQ1);
+    score++;
+  } else if (lowerCaseGuestQ1 === 'no'||lowerCaseGuestQ1 === 'n'){
+    alert (guestName + " chose " +guestQ1);
+  }
+  // console.log(guestQ1);
 }
-// console.log(guestQ1);
+question1();
 
 // Questions 2
 let guestQ2 = prompt (guestName + ", do you think Barra has traveled outside of the U.S.?")
