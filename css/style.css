@@ -34,12 +34,14 @@ header {
   color: orange;
 }
 
+/* img styling */
 #me {
   display: block;
   margin: 10px auto;
 
 }
 
+/* General styling for entires */
 .entry {
   margin: 24px auto 24px auto;
   /* border: solid 5px black; */
@@ -47,12 +49,14 @@ header {
 
 }
 
+/* h2 styling */
 h2 {
   font-size:1.75em;
   font-weight: bold;
   text-decoration: underline;
 }
 
+/* h3 stlying */
 h3 {
   font-size: 1.5em;
   font-weight: bold;
@@ -60,14 +64,23 @@ h3 {
 
 }
 
+/* p stlying */
 p {
   font-size: 1.25em;
 }
 
-ul {
+/* list styling */
+ol {
+  list-style-type: decimal;
   font-size: 1.15em;
+  margin-left: 24px;
 }
 
+ul {
+  list-style-type:circle;
+  font-size: 1.15em;
+  margin-left: 24px;
+}
 
 /* footer styling */
 
