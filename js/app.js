@@ -99,40 +99,47 @@ question5();
 let favNumber = Math.floor(Math.random() * 20);
 let guessCount = 0;
 let userGuess;
-while ((guessCount < 4) && (userGuess != favNumber)){
-  userGuess = prompt ("Extra Credit time! Can you guess my favorite number between 1 to 20?");
-  guessCount++;
-  if (userGuess == favNumber){
-    alert("Congratulations you guessed my favorite number" + favNumber);
-    score++;
-  }else if (userGuess > favNumber){
-    alert("That guess was too high, try again!");
-  }else if (userGuess < favNumber){
-    alert("That guess was too low, try again!");
-  }
-  if ((guessCount == 4) && (userGuess != favNumber)){
-    alert("Sorry, you're out of guesses. My favorite number is " + favNumber);
+function question6(){
+  while ((guessCount < 4) && (userGuess != favNumber)){
+    userGuess = prompt ("Extra Credit time! Can you guess my favorite number between 1 to 20?");
+    guessCount++;
+    if (userGuess == favNumber){
+      alert("Congratulations you guessed my favorite number" + favNumber);
+      score++;
+    }else if (userGuess > favNumber){
+      alert("That guess was too high, try again!");
+    }else if (userGuess < favNumber){
+      alert("That guess was too low, try again!");
+    }
+    if ((guessCount == 4) && (userGuess != favNumber)){
+      alert("Sorry, you're out of guesses. My favorite number is " + favNumber);
+    }
   }
 }
-
+ question6(); 
 // Name the planets - Thanks again to Ben Arno! The .tolowercase fix is nice
 
 let tries = 0
 let planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto']
 let attempt = '';
 console.log(planets)
-while (!planets.includes(attempt.toLowerCase()) && tries < 6) { 
-  attempt = prompt ("Can you name a planet in our solar system?");
-  tries++;
-  if (planets.includes(attempt.toLowerCase())) {
-    alert ('that\'s correct! Great Job.');
-    score++;
-  } else if (!planets.includes(attempt.toLowerCase()) && tries === 6) {
-    alert ('Sorry, that\'s not a planet i recognize, you\'re out of tries');
-  } else {
-    alert ('that\'s not a planet I recognize, try again');
+
+function question7(){
+  while (!planets.includes(attempt.toLowerCase()) && tries < 6) { 
+    attempt = prompt ("Can you name a planet in our solar system?");
+    tries++;
+    if (planets.includes(attempt.toLowerCase())) {
+      alert ('that\'s correct! Great Job.');
+      score++;
+    } else if (!planets.includes(attempt.toLowerCase()) && tries === 6) {
+      alert ('Sorry, that\'s not a planet i recognize, you\'re out of tries');
+    } else {
+      alert ('that\'s not a planet I recognize, try again');
+    }
   }
 }
+question7();
+
 alert('Here\'s all the Planets again incase you frogot them ' +planets);
 
 alert('Thanks for playing, you scored ' + score + " out of 7 possible points" )
