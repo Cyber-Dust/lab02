@@ -51,13 +51,16 @@ question2();
 let guestQ3 = prompt (guestName + ", do you think Barra plays an instrument?")
 let lowerCaseGuestQ3 = guestQ3.toLowerCase();
 
-if (lowerCaseGuestQ3 === 'yes'||lowerCaseGuestQ3 === 'y'){
-  alert (guestName + " chose " +guestQ3);
-  score++;
-} else if (lowerCaseGuestQ3 === 'no'||lowerCaseGuestQ3 === 'n'){
-  alert (guestName + " chose " +guestQ3);
+function question3(){
+  if (lowerCaseGuestQ3 === 'yes'||lowerCaseGuestQ3 === 'y'){
+    alert (guestName + " chose " +guestQ3);
+    score++;
+  } else if (lowerCaseGuestQ3 === 'no'||lowerCaseGuestQ3 === 'n'){
+    alert (guestName + " chose " +guestQ3);
+  }
 }
-// console.log(guestQ3);
+question3();
+  // console.log(guestQ3);
 
 // Questions 4
 let guestQ4 = prompt (guestName + ", do you think Barra knows a second language?")
