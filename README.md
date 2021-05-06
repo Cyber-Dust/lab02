@@ -5,6 +5,10 @@
 In this project I build a page where you get to learn a bit about my. As well as answer some guessing game questions regarding things I might or might not have done before. 
 
 ### Author: Benjamin Ibarra - Barra
+### Contributer: CyberDust
+Code collaborated on 5/6/21
+- Navigator: Barra
+- Driver: CyberDust(Dasean)
 
 ### Links and Resources
 
