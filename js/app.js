@@ -66,12 +66,15 @@ question3();
 let guestQ4 = prompt (guestName + ", do you think Barra knows a second language?")
 let lowerCaseGuestQ4 = guestQ4.toLowerCase();
 
-if (lowerCaseGuestQ4 === 'yes'||lowerCaseGuestQ4 === 'y'){
-  alert (guestName + " chose " + guestQ4);
-  score++;
-} else if (lowerCaseGuestQ4 === 'no'||lowerCaseGuestQ4 === 'n'){
-  alert (guestName + " chose " +guestQ4);
+function question4(){
+  if (lowerCaseGuestQ4 === 'yes'||lowerCaseGuestQ4 === 'y'){
+    alert (guestName + " chose " + guestQ4);
+    score++;
+  } else if (lowerCaseGuestQ4 === 'no'||lowerCaseGuestQ4 === 'n'){
+    alert (guestName + " chose " +guestQ4);
+  }
 }
+question4();
 // console.log(guestQ4);
 
 // Questions 5
