@@ -26,21 +26,26 @@ function question1(){
   } else if (lowerCaseGuestQ1 === 'no'||lowerCaseGuestQ1 === 'n'){
     alert (guestName + " chose " +guestQ1);
   }
-  // console.log(guestQ1);
 }
 question1();
+// console.log(guestQ1);
+
 
 // Questions 2
 let guestQ2 = prompt (guestName + ", do you think Barra has traveled outside of the U.S.?")
 let lowerCaseGuestQ2 = guestQ2.toLowerCase();
 
-if (lowerCaseGuestQ2 === 'yes'||lowerCaseGuestQ2 === 'y'){
-  alert (guestName + " chose " +guestQ2);
-  score++;
-} else if (lowerCaseGuestQ2 === 'no'||lowerCaseGuestQ2 === 'n'){
-  alert (guestName + " chose " +guestQ2);
+function question2(){
+  if (lowerCaseGuestQ2 === 'yes'||lowerCaseGuestQ2 === 'y'){
+    alert (guestName + " chose " +guestQ2);
+    score++;
+  } else if (lowerCaseGuestQ2 === 'no'||lowerCaseGuestQ2 === 'n'){
+    alert (guestName + " chose " +guestQ2);
+  }
 }
+question2();
 // console.log(guestQ2);
+
 
 // Questions 3
 let guestQ3 = prompt (guestName + ", do you think Barra plays an instrument?")
