@@ -80,18 +80,20 @@ question4();
 // Questions 5
 let guestQ5 = prompt (guestName + ", do you think Barra will be a successful software developer?")
 let lowerCaseGuestQ5 = guestQ5.toLowerCase();
-
-if (lowerCaseGuestQ5 === 'yes'||lowerCaseGuestQ5 === 'y'){
-  alert (guestName + " chose " + guestQ5 + ". " + guestName + " is correct, Barra will become a successful software developer");
-  score++;
-} else {
-  alert ("The only possible answer here is yes, silly");
+function question5(){
+  if (lowerCaseGuestQ5 === 'yes'||lowerCaseGuestQ5 === 'y'){
+    alert (guestName + " chose " + guestQ5 + ". " + guestName + " is correct, Barra will become a successful software developer");
+    score++;
+  } else {
+    alert ("The only possible answer here is yes, silly");
+  }
 }
-let finalMessage = ("Thank you " + guestName + " for playing the guessing game. You've scored" + score +  "so far. The answers to all the questions was actually Yes. Here are a list of the answers you chose. #1: " + guestQ1 + ", #2: " + guestQ2 + ", #3: " + guestQ3 + ", #4: " + guestQ4 + ", #5: " + guestQ5);
+question5();
+// console.log(guestQ5);
 
-alert(finalMessage);
+  let finalMessage = ("Thank you " + guestName + " for playing the guessing game. You've scored" + score +  "so far. The answers to all the questions was actually Yes. Here are a list of the answers you chose. #1: " + guestQ1 + ", #2: " + guestQ2 + ", #3: " + guestQ3 + ", #4: " + guestQ4 + ", #5: " + guestQ5);
+  alert(finalMessage);
 
-console.log(guestQ5);
 
 // Referenced Ben Arno's work because i could not figure out the logic. Thank you Ben!
 let favNumber = Math.floor(Math.random() * 20);
