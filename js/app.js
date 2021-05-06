@@ -110,7 +110,7 @@ while (!planets.includes(attempt.toLowerCase()) && tries < 6) {
   attempt = prompt ("Can you name a planet in our solar system?");
   tries++;
   if (planets.includes(attempt.toLowerCase())) {
-    alert ('that\'s correct! Keep going.');
+    alert ('that\'s correct! Great Job.');
     score++;
   } else if (!planets.includes(attempt.toLowerCase()) && tries === 6) {
     alert ('Sorry, that\'s not a planet i recognize, you\'re out of tries');
