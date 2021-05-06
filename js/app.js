@@ -5,7 +5,6 @@ let score = 0;
 // Questions 0
 let guestChoice = prompt("Hello there Guest, welcome to my page. Here you will guess at some questions about me, but first tell me about yourself. Is that okay with you? Yes or No?");
 let lowerCaseGuest = guestChoice.toLowerCase();
-let upperCaseGuest = guestChoice.toUpperCase();
 let guestName = "Guest";
 
 if (lowerCaseGuest === 'yes'||lowerCaseGuest === 'y'){
